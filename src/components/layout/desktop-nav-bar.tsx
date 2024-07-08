@@ -6,20 +6,21 @@ export default function NavigationBar() {
     <div className="flex justify-between py-[12px] border-b-[1.5px] border-solid px-[24px]">
       <Link className="flex items-center" href="/">
         <Image
-          className="w-[16px] h-[16px]"
+          className="w-[24px] h-[24px]"
           src="/favicon.png"
           alt="logo"
-          width={16}
-          height={16}
+          width={24}
+          height={24}
         />
-        <p className="ml-[2px]">Diary</p>
+        <p className="ml-[12px]">ToDays</p>
       </Link>
       <div className="flex gap-[24px]">
-        <Link href="/my-diary">My Diary</Link>
-        <Link href="/chats">Chats</Link>
-        <Link href="/friends">Friends</Link>
+        <Link href="/my-todays">My ToDays</Link>
+        <Link href="/today">To Day</Link>
       </div>
-      <Link href="/sign-in">Sign in</Link>
+      <Link href="/notifications">notification icon</Link>
+      <Link href="/chats">chats icon</Link>
+      <Link href="/settings">settings</Link>
     </div>
   );
 }
