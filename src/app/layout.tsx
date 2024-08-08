@@ -1,5 +1,5 @@
 import NavigationBar from "@/components/layout/desktop-nav-bar";
-import "@/app/global.css"
+import "@/app/global.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -17,9 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-slate-50">
         <NavigationBar />
-        {children}
+        <div className="h-[48px]"></div>
+        <div className="mx-auto max-w-[680px] desktop:max-w-[1128px]">
+          {children}
+        </div>
       </body>
     </html>
   );
